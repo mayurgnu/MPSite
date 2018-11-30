@@ -1,0 +1,31 @@
+﻿@{
+//Layout = null;
+//User currentUser = httpContextAccessor.HttpContext.User.Identity.Name != null ? await userManager.FindByNameAsync(httpContextAccessor.HttpContext.User.Identity.Name) : new User();
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Client</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        @*var user = {
+      name: '@currentUser.Name',
+      username:'@currentUser.Email',
+      contactNo:'@currentUser.PhoneNumber',
+      userId:'@currentUser.Id'
+    }*@
+    </script>
+</head>
+<body>
+    <app-root></app-root>
+    <script type="text/javascript" src="client/runtime.js"></script>
+    <script type="text/javascript" src="client/polyfills.js"></script>
+    <script type="text/javascript" src="client/styles.js"></script>
+    @*<script type="text/javascript" src="~/client/scripts.js"></script>*@
+    <script type="text/javascript" src="client/vendor.js"></script>
+    <script type="text/javascript" src="client/main.js"></script>
+</body>
+</html>
